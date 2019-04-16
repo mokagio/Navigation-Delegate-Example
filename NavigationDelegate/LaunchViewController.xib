@@ -12,6 +12,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LaunchViewController" customModule="NavigationDelegate" customModuleProvider="target">
             <connections>
+                <outlet property="blueButton" destination="Q4E-Mu-Y5n" id="l3m-uF-nuW"/>
+                <outlet property="redButton" destination="T1a-9Z-Ddx" id="O68-k2-CPK"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

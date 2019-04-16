@@ -4,6 +4,7 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var navigationController: UINavigationController?
 
     func application(
         _ application: UIApplication,
@@ -14,12 +15,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // You _can_ do this with a Storyboard too.
         let launchViewController = LaunchViewController(nibName: "LaunchViewController", bundle: .main)
         launchViewController.title = "👩‍✈️"
-        let navigator = UINavigationController(rootViewController: launchViewController)
+        launchViewController.navigationDelegate = self
 
-        window?.rootViewController = navigator
+        navigationController = UINavigationController(rootViewController: launchViewController)
+
+        window?.rootViewController = navigationController
 
         window?.makeKeyAndVisible()
 
         return true
+    }
+}
+
+extension AppDelegate: LaunchViewControllerNavigationDelegate {
+
+    func showRedViewController() {
+        let redViewController = ColoredViewController()
+        redViewController.color = .red
+        navigationController?.pushViewController(redViewController, animated: true)
+    }
+
+    func showBlueViewController() {
+        let blueViewController = ColoredViewController()
+        blueViewController.color = .blue
+        navigationController?.pushViewController(blueViewController, animated: true)
     }
 }
