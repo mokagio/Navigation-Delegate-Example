@@ -13,6 +13,7 @@
 		3FDF252E2265D3FF00E10829 /* NavigationDelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDF252D2265D3FF00E10829 /* NavigationDelegateTests.swift */; };
 		3FDF253A2265D5BA00E10829 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDF25382265D5BA00E10829 /* LaunchViewController.swift */; };
 		3FDF253B2265D5BA00E10829 /* LaunchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FDF25392265D5BA00E10829 /* LaunchViewController.xib */; };
+		3FDF253D2265D7A700E10829 /* ColoredViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDF253C2265D7A700E10829 /* ColoredViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		3FDF252F2265D3FF00E10829 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3FDF25382265D5BA00E10829 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		3FDF25392265D5BA00E10829 /* LaunchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LaunchViewController.xib; sourceTree = "<group>"; };
+		3FDF253C2265D7A700E10829 /* ColoredViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoredViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				3FDF25182265D3FE00E10829 /* AppDelegate.swift */,
 				3FDF251F2265D3FF00E10829 /* Assets.xcassets */,
+				3FDF253C2265D7A700E10829 /* ColoredViewController.swift */,
 				3FDF25242265D3FF00E10829 /* Info.plist */,
 				3FDF25212265D3FF00E10829 /* LaunchScreen.storyboard */,
 				3FDF25382265D5BA00E10829 /* LaunchViewController.swift */,
@@ -197,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FDF253D2265D7A700E10829 /* ColoredViewController.swift in Sources */,
 				3FDF25192265D3FE00E10829 /* AppDelegate.swift in Sources */,
 				3FDF253A2265D5BA00E10829 /* LaunchViewController.swift in Sources */,
 			);
