@@ -38,6 +38,21 @@ extension AppDelegate: LaunchViewControllerNavigationDelegate {
     func showBlueViewController() {
         let blueViewController = ColoredViewController()
         blueViewController.color = .blue
-        navigationController?.pushViewController(blueViewController, animated: true)
+
+        blueViewController.navigationItem.leftBarButtonItem = UIBarButtonItem(
+            title: "Dismiss",
+            style: .plain,
+            target: self,
+            action: #selector(dismiss)
+        )
+        navigationController?.present(
+            UINavigationController(rootViewController: blueViewController),
+            animated: true,
+            completion: .none
+        )
+    }
+
+    @objc func dismiss() {
+        navigationController?.dismiss(animated: true, completion: .none)
     }
 }
